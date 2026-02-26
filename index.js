@@ -2,7 +2,7 @@ const { Telegraf, Markup } = require("telegraf")
 const fs = require("fs")
 
 const bot = new Telegraf("7654511200:AAFguCAbypsNMZq8rJLdAAJJbhUw4xILneQ")
-const ADMIN_ID = 5056923540
+const ADMIN_ID = 8162902542
 
 // ===== CHANNELS =====
 if (!fs.existsSync("channels.json")) fs.writeFileSync("channels.json","[]")
@@ -187,3 +187,4 @@ bot.hears(/Signal olish/, async (ctx)=>{
 bot.catch(err => console.log("Xatolik:", err))
 bot.launch()
 console.log("Bot ishga tushdi 🚀")
+
