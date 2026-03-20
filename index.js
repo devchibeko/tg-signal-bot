@@ -111,7 +111,7 @@ async function sendVariant(ctx, name, promo, link, img1, img2) {
 
     await ctx.replyWithMediaGroup([
         { type: "photo", media: { source: img1 },
-          caption:`✨ ${name}\n━━━━━━━━━━━━━━\n🎁 PROMOKOD: ${promo}\n💰 Min depozit: 10 000 so‘m\n\n📸 2 ta rasm yuboring`
+          caption:`✨ ${name}\n━━━━━━━━━━━━━━\n🎁 PROMOKOD: ${promo}\n💰 Min depozit: 50 000 so‘m\n\n📸 2 ta rasm yuboring`
         },
         { type: "photo", media: { source: img2 } }
     ])
