@@ -154,12 +154,15 @@ bot.on("photo", async (ctx)=>{
 })
 
 // approve
+// approve
 bot.action(/approve_(.+)/, async (ctx) => {
     const userId = ctx.match[1]
     users[userId].approved = true
     saveUsers()
 
     await bot.telegram.sendMessage(userId,"✅ Tasdiqlandingiz!",Markup.keyboard([["📊 Signal olish"]]).resize())
+
+    await ctx.answerCbQuery("Tasdiqladingiz")
 })
 
 // reject
